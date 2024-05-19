@@ -18,18 +18,18 @@ st.write("The name on your Smoothie will be: ", name_on_order)
 st.write("Contents of st.secrets:")
 st.write(st.secrets)
 
-# Access Snowflake connection details from Streamlit secrets
-try:
-    snowflake_user = st.secrets["connections"]["snowflake"]["user"]
-    snowflake_password = st.secrets["connections"]["snowflake"]["password"]
-    snowflake_account = st.secrets["connections"]["snowflake"]["account"]
-    snowflake_warehouse = st.secrets["connections"]["snowflake"]["warehouse"]
-    snowflake_database = st.secrets["connections"]["snowflake"]["database"]
-    snowflake_schema = st.secrets["connections"]["snowflake"]["schema"]
-    st.write("Snowflake connection details loaded successfully.")
-except KeyError as e:
-    st.error(f"Missing key in secrets: {e}")
-    st.stop()
+# # Access Snowflake connection details from Streamlit secrets
+# try:
+#     snowflake_user = st.secrets["connections"]["snowflake"]["user"]
+#     snowflake_password = st.secrets["connections"]["snowflake"]["password"]
+#     snowflake_account = st.secrets["connections"]["snowflake"]["account"]
+#     snowflake_warehouse = st.secrets["connections"]["snowflake"]["warehouse"]
+#     snowflake_database = st.secrets["connections"]["snowflake"]["database"]
+#     snowflake_schema = st.secrets["connections"]["snowflake"]["schema"]
+#     st.write("Snowflake connection details loaded successfully.")
+# except KeyError as e:
+#     st.error(f"Missing key in secrets: {e}")
+#     st.stop()
 
 
 
