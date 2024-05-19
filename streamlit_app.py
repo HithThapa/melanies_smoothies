@@ -14,9 +14,9 @@ st.write(
 name_on_order = st.text_input("Name on Smoothie: ")
 st.write("The name on your Smoothie will be: ", name_on_order)
 
-# Debugging - Print the contents of st.secrets
-st.write("Contents of st.secrets:")
-st.write(st.secrets)
+# # Debugging - Print the contents of st.secrets
+# st.write("Contents of st.secrets:")
+# st.write(st.secrets)
 
 # # Access Snowflake connection details from Streamlit secrets
 # try:
